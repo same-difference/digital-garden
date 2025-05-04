@@ -1,5 +1,6 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import style from "./styles/explorer.scss"
+import LinkBack from "./LinkBack"
 
 // @ts-ignore
 import script from "./scripts/explorer.inline"
@@ -117,6 +118,7 @@ export default ((userOpts?: Partial<Options>) => {
           </svg>
         </button>
         <div class="explorer-content" aria-expanded={false}>
+          <LinkBack />
           <OverflowList class="explorer-ul" />
         </div>
         <template id="template-file">
