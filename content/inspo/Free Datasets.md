@@ -1,0 +1,3 @@
+- https://www.kaggle.com/
+- https://catalog.data.gov/dataset
+- https://data.europa.eu/en
