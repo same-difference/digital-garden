@@ -3,7 +3,7 @@ created: 2025-05-06
 modified: 2025-05-06
 ---
 ## Would you like to answer these questions for yourself?
-[You can!!](https://forms.gle/oYYwsLxLgVyHNDBi7) It'll help immensely with my development of the site and would be very much appreciated 🫶
+[You can!!](https://forms.gle/oYYwsLxLgVyHNDBi7) It'll help immensely with my development of the site and would be very much appreciated 🥰
 
 Just uh... set aside an hour+ to do so 😅 and be prepared for your brain to be fried afterwards. I highly recommend breaking the survey up into multiple answering sessions.
 ## ethics
