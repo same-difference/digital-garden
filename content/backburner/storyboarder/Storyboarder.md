@@ -1,8 +1,11 @@
+---
+modified: 2025-05-04
+created: 2025-05-03
+---
 ## Why?
 I'm a very visual planner and my default is sticky notes, but when I have multiple projects at once there's around 20 sticky notes on my desk and my cat knocks them all over the place. All the visual planning tools I've used so far are either paid or incredibly fiddly and annoying to use, hence: storyboarder!
-
 ## The Gist
-A browser-based visual story planning tool that uses draggable cards on a canvas
+A browser-based visual story planning tool focused around lots of text that uses draggable cards on a canvas where you can go as fast as [OneNote](https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app) and click type click type, but with more features and a prettier ui like [Milanote](https://milanote.com/)
 ### Canvas Interface
 - Clickable and draggable cards on a canvas.
 - Create connections between cards by dragging.

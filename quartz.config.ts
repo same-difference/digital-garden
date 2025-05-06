@@ -9,7 +9,7 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "dianneth",
-    pageTitleSuffix: "🪴",
+    pageTitleSuffix: "⊹₊˚⋅",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -23,21 +23,21 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Exo 2",
+        body: "Atkinson Hyperlegible Next",
+        code: "JetBrains Mono",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#f9f4fd",
+          lightgray: "#fbeaff",
+          gray: "#8c6f93",
+          darkgray: "#5d4467",
+          dark: "#4e3971",
+          secondary: "#623369",
+          tertiary: "#965bb9",
+          highlight: "#8f54a91f",
+          textHighlight: "#ffe0ec88",
         },
         darkMode: {
           light: "#161618",

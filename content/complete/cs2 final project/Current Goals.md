@@ -1,3 +1,7 @@
+---
+modified: 2025-05-04
+created: 2024-11-02
+---
 - [x] Fix iterator delete
 - [x] Optimize add
 	- [x] Fix reBalance
@@ -5,7 +9,7 @@
 - [x] make retainAll
 - [x] Finish testing all methods
 
-### Unimplemented Methods
+## Unimplemented Methods
 - [x] toArray typed
 - [x] add
 - [x] remove
@@ -16,9 +20,7 @@
 - [x] equals
 - [x] hashCode
 
-
-
-### Need to Test
+## Need to Test
 - [x] iterator next
 - [x] iterator has next
 - [x] iterator remove

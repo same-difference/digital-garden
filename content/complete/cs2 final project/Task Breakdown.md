@@ -1,3 +1,7 @@
+---
+modified: 2025-05-04
+created: 2024-11-01
+---
 - [x] Make A Skip List
 	- [x] Create nodes :: SkipListSetItems
 		- [x] Contains payload, left, right, up, and down pointers, and height of node
@@ -62,7 +66,7 @@
 		- [x] equals
 		- [x] hashCode
 	- [x] Ensure payload items implement Comparable
-		- [x] Literally just part of SkipListSet’s class declaration 
+		- [x] Literally just part of SkipListSet’s class declaration
 	- [x] Create a constructor for an empty skip list
 	- [x] Create a constructor for a skip list populated by the contents of a collection
 	- [x] Create helper functions

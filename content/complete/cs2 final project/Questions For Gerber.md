@@ -1,3 +1,7 @@
+---
+modified: 2025-05-04
+created: 2024-11-02
+---
 - Can the SkipList contain null values?
 	- No nulls in our payloads, 0 values yes
 - Does he want us to implement the throws as specified by the java documentation?

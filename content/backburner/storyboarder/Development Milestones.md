@@ -1,51 +1,54 @@
+---
+modified: 2025-05-04
+created: 2024-10-28
+---
 ## Milestone 1: Prep
 
-Database Schema
-users (collection):
+### Database Schema
+- users (collection):
 	- userId generated from auth at log in (document)
 		- canvases (collection)
 			- individual canvas 1 (document)
 				- views (collection)
 					- view (document)
 						- card locations (fields?)
-						- card connections (collection)
-							- connection (document)
-								- color (field)
-								- arrow (field)
-								- line (field)
+							- card connections (collection)
+								- connection (document)
+									- color (field)
+									- arrow (field)
+									- line (field)
 				- cards (collection)
 				- state (field)
 				- recycle bin (collection)
 			- individual canvas 2 (document)
 				- same stuff as individual canvas 1
-		- settings (collection)
-		- templates (collection)
-			- layout templates (collection)
-			- card templates (collection)
+- settings (collection)
+- templates (collection)
+	- layout templates (collection)
+	- card templates (collection)
 
 [[Figma Wireframe]]
 
-
 - [ ] Basic MERN project set up with a local mongodb database
 - [ ] Create users table
-- database of all saved users and a link to their canvases table
+	- database of all saved users and a link to their canvases table
 - [ ] Create user table per user in users table
-- all canvases created by that user or that the user has edit access on
-- all layout templates saved by that user
-- all card templates save by that user
+	- all canvases created by that user or that the user has edit access on
+	- all layout templates saved by that user
+	- all card templates save by that user
 - [ ] Create canvas table per canvas in user table
-* saved customizer state
-* links to all cards in the canvas
-* links to saved views in canvas
-* saved recycle bin state
+	* saved customizer state
+	* links to all cards in the canvas
+	* links to saved views in canvas
+	* saved recycle bin state
 - [ ] Create view table per view in canvas table
-* location information for all cards in canvas
-* connection information for all cards in canvas
-* display data for every connection
+	* location information for all cards in canvas
+	* connection information for all cards in canvas
+	* display data for every connection
 - [ ] Create cards table per canvas
-* every field
-* display data for each field
-* display data for card and card border
+	* every field
+	* display data for each field
+	* display data for card and card border
 ## Milestone 2: Hello World
 - [ ] Draggable cards
 - [ ] Expand card details and view full database card
