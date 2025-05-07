@@ -12,7 +12,6 @@ import { BuildCtx } from "../../util/ctx"
 import { QuartzPluginData } from "../vfile"
 import fs from "node:fs/promises"
 import chalk from "chalk"
-import { fallbackFonts } from "../../util/og"
 import { parse } from 'twemoji-parser'
 
 const defaultOptions: SocialImageOptions = {
@@ -66,7 +65,7 @@ async function generateSocialImage(
           return emojiBase64
         }
       }
-
+      if (languageCode) {}  // never read my ass
       return "symbol"
     },
   })  
