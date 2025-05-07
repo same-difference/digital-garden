@@ -5,13 +5,15 @@ import { FullSlug, getFileExtension, isAbsoluteURL, joinSegments, QUARTZ } from 
 import { ImageOptions, SocialImageOptions, defaultImage, getSatoriFonts } from "../../util/og"
 import sharp from "sharp"
 import satori, { SatoriOptions } from "satori"
-import { loadEmoji, getIconCode } from "../../util/emoji"
+import { loadEmoji, getIconCode, isFullEmoji } from "../../util/emoji"
 import { Readable } from "stream"
 import { write } from "./helpers"
 import { BuildCtx } from "../../util/ctx"
 import { QuartzPluginData } from "../vfile"
 import fs from "node:fs/promises"
 import chalk from "chalk"
+import { fallbackFonts } from "../../util/og"
+import { parse } from 'twemoji-parser'
 
 const defaultOptions: SocialImageOptions = {
   colorScheme: "lightMode",
@@ -48,19 +50,26 @@ async function generateSocialImage(
     fileData,
     iconBase64,
   })
-
+  
   const svg = await satori(imageComponent, {
     width,
     height,
     fonts,
     loadAdditionalAsset: async (languageCode: string, segment: string) => {
-      if (languageCode === "emoji") {
-        return await loadEmoji(getIconCode(segment))
+      
+      // Check if this character is an emoji
+      const parsedEmojis = parse(segment)
+      if (isFullEmoji(segment)) {
+        const emoji = parsedEmojis[0].text
+        const emojiBase64 = await loadEmoji(getIconCode(emoji))
+        if (emojiBase64) {
+          return emojiBase64
+        }
       }
 
-      return languageCode
+      return "symbol"
     },
-  })
+  })  
 
   return sharp(Buffer.from(svg)).webp({ quality: 40 })
 }

@@ -1,3 +1,12 @@
+import emojiRegex from "emoji-regex"
+
+
+export function isFullEmoji(segment: string) {
+  const emojiRegexInst = emojiRegex()
+  return emojiRegexInst.test(segment)
+}
+
+
 const U200D = String.fromCharCode(8205)
 const UFE0Fg = /\uFE0F/g
 
@@ -25,23 +34,23 @@ function toCodePoint(unicodeSurrogates: string) {
   return r.join("-")
 }
 
-type EmojiMap = {
-  codePointToName: Record<string, string>
-  nameToBase64: Record<string, string>
-}
+const emojiCache = new Map<string, string | undefined>()
 
-let emojimap: EmojiMap | undefined = undefined
 export async function loadEmoji(code: string) {
-  if (!emojimap) {
-    const data = await import("./emojimap.json")
-    emojimap = data
+  if (emojiCache.has(code)) return emojiCache.get(code)
+
+  const emojiUrl = `https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/72x72/${code}.png`
+  const response = await fetch(emojiUrl)
+
+  if (!response.ok) {
+    console.warn(`Emoji ${code} not found, using blank space`)
+    return undefined
   }
 
-  const name = emojimap.codePointToName[`U+${code.toUpperCase()}`]
-  if (!name) throw new Error(`codepoint ${code} not found in map`)
+  const buffer = await response.arrayBuffer()
+  const b64 = Buffer.from(buffer).toString("base64")
+  const result = `data:image/png;base64,${b64}`
 
-  const b64 = emojimap.nameToBase64[name]
-  if (!b64) throw new Error(`name ${name} not found in map`)
-
-  return b64
+  emojiCache.set(code, result)
+  return result
 }

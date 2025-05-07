@@ -14,6 +14,25 @@ import chalk from "chalk"
 const defaultHeaderWeight = [700]
 const defaultBodyWeight = [400]
 
+export const fallbackFonts: SatoriOptions["fonts"] = []
+export const fallbackFontAliases: Record<string, SatoriOptions["fonts"][0]> = {}
+
+// Helper function to load local fallback fonts
+async function loadFallbackFont(name: string, filename: string): Promise<SatoriOptions["fonts"][0]> {
+  const fontPath = path.join(path.resolve(path.dirname(new URL(import.meta.url).pathname)), "og_fallback_fonts", filename)
+  const fontData = await fs.readFile(fontPath)
+  
+  const font: SatoriOptions["fonts"][0] = {
+    name,
+    data: fontData,
+    weight: 400,
+    style: "normal",
+    lang: "symbol"
+  }
+
+  return font
+}
+
 export async function getSatoriFonts(headerFont: FontSpecification, bodyFont: FontSpecification) {
   // Get all weights for header and body fonts
   const headerWeights: FontWeight[] = (
@@ -36,7 +55,7 @@ export async function getSatoriFonts(headerFont: FontSpecification, bodyFont: Fo
       name: headerFontName,
       data,
       weight,
-      style: "normal" as const,
+      style: "normal" as const
     }
   })
 
@@ -47,7 +66,7 @@ export async function getSatoriFonts(headerFont: FontSpecification, bodyFont: Fo
       name: bodyFontName,
       data,
       weight,
-      style: "normal" as const,
+      style: "normal" as const
     }
   })
 
@@ -56,10 +75,16 @@ export async function getSatoriFonts(headerFont: FontSpecification, bodyFont: Fo
     Promise.all(bodyFontPromises),
   ])
 
-  // Filter out any failed fetches and combine header and body fonts
+  // Load fallback fonts in priority order
+  fallbackFonts.push(await loadFallbackFont("Noto Sans Symbols 2", "NotoSansSymbols2-Regular.ttf"))
+  fallbackFonts.push(await loadFallbackFont("Noto Sans Math", "NotoSansMath-Regular.ttf"))
+  fallbackFonts.push(await loadFallbackFont("DejaVu Sans", "DejaVuSans.ttf"))
+  fallbackFonts.push(await loadFallbackFont("Symbola", "Symbola.ttf"))
+
   const fonts: SatoriOptions["fonts"] = [
     ...headerFonts.filter((font): font is NonNullable<typeof font> => font !== null),
     ...bodyFonts.filter((font): font is NonNullable<typeof font> => font !== null),
+    ...fallbackFonts,
   ]
 
   return fonts
@@ -207,6 +232,8 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
         backgroundColor: cfg.theme.colors[colorScheme].light,
         padding: "2.5rem",
         fontFamily: bodyFont,
+        fontWeight: 400,
+        fontStyle: "normal",
       }}
     >
       {/* Header Section */}
@@ -234,6 +261,8 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
             fontSize: 32,
             color: cfg.theme.colors[colorScheme].gray,
             fontFamily: bodyFont,
+            fontWeight: 400,
+            fontStyle: "normal",
           }}
         >
           {cfg.baseUrl}
