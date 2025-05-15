@@ -1,5 +1,5 @@
 ---
-modified: 2025-05-04
+modified: 2025-05-14
 created: 2025-05-03
 ---
 * Youtube Walkthrough: https://youtu.be/VNIYWzNiHK4?si=n7ZZiJl8YKVJ0NBF
@@ -90,4 +90,4 @@ return the matched chord if found
 ## Implemented Version of Audio Script
 ![[Pasted image 20250504165144.png]]
 
-#todo #hackathon
+ #hackathon

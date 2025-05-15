@@ -1,5 +1,5 @@
 ---
-modified: 2025-05-04
+modified: 2025-05-14
 created: 2025-05-03
 ---
 ## Intro
@@ -41,5 +41,3 @@ Goal: Polish the turd both above the hood and underneath it
 - [ ] extract and reorganize current components
 - [ ] make standardized components for headers, blocks of text, urls, cards, pills, and other common ui elements
 Next step: Migrate from raw react & vite to astro
-
-#todo
