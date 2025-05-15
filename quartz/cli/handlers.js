@@ -541,63 +541,69 @@ export async function handleSync(argv) {
   console.log(chalk.bgGreen.black(`\n Quartz v${version} \n`))
   console.log("Backing up your content")
 
-  if (argv.commit) {
-    const contentStat = await fs.promises.lstat(contentFolder)
-    if (contentStat.isSymbolicLink()) {
-      const linkTarg = await fs.promises.readlink(contentFolder)
-      console.log(chalk.yellow("Detected symlink, trying to dereference before committing"))
+  try {
+    if (argv.commit) {
+      const contentStat = await fs.promises.lstat(contentFolder)
+      if (contentStat.isSymbolicLink()) {
+        const linkTarg = await fs.promises.readlink(contentFolder)
+        console.log(chalk.yellow("Detected symlink, trying to dereference before committing"))
 
-      // stash symlink file
-      await stashContentFolder(contentFolder)
+        // stash symlink file
+        await stashContentFolder(contentFolder)
 
-      // follow symlink and copy content
-      await fs.promises.cp(linkTarg, contentFolder, {
-        recursive: true,
-        preserveTimestamps: true,
+        // follow symlink and copy content
+        await fs.promises.cp(linkTarg, contentFolder, {
+          recursive: true,
+          preserveTimestamps: true,
+        })
+      }
+
+      const currentTimestamp = new Date().toLocaleString("en-US", {
+        dateStyle: "medium",
+        timeStyle: "short",
       })
+      const commitMessage = argv.message ?? `Quartz sync: ${currentTimestamp}`
+      spawnSync("git", ["add", "."], { stdio: "inherit" })
+      spawnSync("git", ["commit", "-m", commitMessage], { stdio: "inherit" })
+
+      if (contentStat.isSymbolicLink()) {
+        // put symlink back
+        await popContentFolder(contentFolder)
+      }
     }
 
-    const currentTimestamp = new Date().toLocaleString("en-US", {
-      dateStyle: "medium",
-      timeStyle: "short",
-    })
-    const commitMessage = argv.message ?? `Quartz sync: ${currentTimestamp}`
-    spawnSync("git", ["add", "."], { stdio: "inherit" })
-    spawnSync("git", ["commit", "-m", commitMessage], { stdio: "inherit" })
+    await stashContentFolder(contentFolder)
 
-    if (contentStat.isSymbolicLink()) {
-      // put symlink back
-      await popContentFolder(contentFolder)
+    if (argv.pull) {
+      console.log(
+        "Pulling updates from your repository. You may need to resolve some git conflicts if you've made changes to components or plugins.",
+      )
+      try {
+        gitPull(ORIGIN_NAME, QUARTZ_SOURCE_BRANCH)
+      } catch {
+        console.log(chalk.red("An error occurred above while pulling updates."))
+        await popContentFolder(contentFolder)
+        process.exit(1)
+      }
     }
+
+    await popContentFolder(contentFolder)
+    if (argv.push) {
+      console.log("Pushing your changes")
+      const currentBranch = execSync("git rev-parse --abbrev-ref HEAD").toString().trim()
+      const res = spawnSync("git", ["push", "-uf", ORIGIN_NAME, currentBranch], {
+        stdio: "inherit",
+      })
+      if (res.status !== 0) {
+        console.log(chalk.red(`An error occurred above while pushing to remote ${ORIGIN_NAME}.`))
+        process.exit(1)
+      }
+    }
+
+    console.log(chalk.green("Done!"))
+    process.exit(0)
+  } catch (err) {
+    console.error(chalk.red("Unhandled error in quartz sync:"), err)
+    process.exit(1)
   }
-
-  await stashContentFolder(contentFolder)
-
-  if (argv.pull) {
-    console.log(
-      "Pulling updates from your repository. You may need to resolve some git conflicts if you've made changes to components or plugins.",
-    )
-    try {
-      gitPull(ORIGIN_NAME, QUARTZ_SOURCE_BRANCH)
-    } catch {
-      console.log(chalk.red("An error occurred above while pulling updates."))
-      await popContentFolder(contentFolder)
-      return
-    }
-  }
-
-  await popContentFolder(contentFolder)
-  if (argv.push) {
-    console.log("Pushing your changes")
-    const currentBranch = execSync("git rev-parse --abbrev-ref HEAD").toString().trim()
-    const res = spawnSync("git", ["push", "-uf", ORIGIN_NAME, currentBranch], {
-      stdio: "inherit",
-    })
-    if (res.status !== 0) {
-      console.log(chalk.red(`An error occurred above while pushing to remote ${ORIGIN_NAME}.`))
-      return
-    }
-  }
-
-  console.log(chalk.green("Done!"))
 }
