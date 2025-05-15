@@ -575,7 +575,7 @@ export async function handleSync(argv) {
 
   if (argv.pull) {
     console.log(
-      "Pulling updates from your repository. You may need to resolve some `git` conflicts if you've made changes to components or plugins.",
+      "Pulling updates from your repository. You may need to resolve some git conflicts if you've made changes to components or plugins.",
     )
     try {
       gitPull(ORIGIN_NAME, QUARTZ_SOURCE_BRANCH)
