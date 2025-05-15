@@ -601,7 +601,7 @@ export async function handleSync(argv) {
     }
 
     console.log(chalk.green("Done!"))
-    process.exit(0)
+    process.exit(1)
   } catch (err) {
     console.error(chalk.red("Unhandled error in quartz sync:"), err)
     process.exit(1)
