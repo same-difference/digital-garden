@@ -538,7 +538,7 @@ export async function handleRestore(argv) {
  */
 export async function handleSync(argv) {
   const contentFolder = resolveContentPath(argv.directory)
-  console.log(chalk.bgGreen.black(`\n Quartz v${version} \n`))
+  console.log(chalk.bgGreen.black(`\nQuartz v${version}\n`))
   console.log("Backing up your content")
 
   try {
@@ -601,7 +601,7 @@ export async function handleSync(argv) {
     }
 
     console.log(chalk.green("Done!"))
-    process.exit(1)
+    process.exit(0)
   } catch (err) {
     console.error(chalk.red("Unhandled error in quartz sync:"), err)
     process.exit(1)
