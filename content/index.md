@@ -5,7 +5,7 @@ created: 2025-05-03
 ---
 [What's a digital garden?](https://maggieappleton.com/garden-history/)
 
-==I know, great SEO, me.== Immediately linking off my own site as the very first thing on a homepage lol. But yeah I need to organize my thoughts more because sticky notes and a singular discord channel ain't doing it anymore.
+I know, great SEO, me. Immediately linking off my own site as the very first thing on a homepage lol. But yeah I need to organize my thoughts more because sticky notes and a singular discord channel ain't doing it anymore.
 
 Things are getting lost and forgotten, sometimes I put it in a different channel on accident. I'm tired of it. Let's fix that now, shall we?
 
