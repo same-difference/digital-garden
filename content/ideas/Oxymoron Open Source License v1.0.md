@@ -2,16 +2,16 @@
 created: 2025-05-16
 modified: 2025-05-16
 ---
-# Oxymoron Open Source License (OOSL) v1.0
+## Oxymoron Open Source License (OOSL) v1.0
 
 Copyright (C) 2025 [Your Name]
 Contact: contact@[yourdomain].com or see https://yourdomain.com/oosl
 
-## PREAMBLE
+### PREAMBLE
 
 This license is designed to protect the original creator's rights while promoting free use, modification, and distribution of the software for non-commercial purposes. It allows for monetization of substantially modified derivative works while requiring explicit permission for commercial use of the Software. For commercial entities, the Licensor offers flexible dual-licensing options.
 
-## 1. DEFINITIONS
+### 1. DEFINITIONS
 
 a. "Software" means the original work in source code form, object code form, documentation, and any associated files, made available under this License.
 
@@ -40,7 +40,7 @@ h. "Contribution" means any work of authorship, including modifications or addit
 
 i. "Open Source License" means a license that meets the Open Source Definition (as published by the Open Source Initiative) or similar widely-recognized criteria for open source software.
 
-## 2. GRANT OF RIGHTS
+### 2. GRANT OF RIGHTS
 
 Subject to the terms and conditions of this License, the Licensor hereby grants You:
 
@@ -69,7 +69,7 @@ f. The right to distribute Derivative Works that meet the "Significant" threshol
    iv. You clearly indicate which portions of the work derive from the Software;
    v. The relicensing of Derivative Works under another Open Source License does not permit circumvention of Section 4. Any entity involved in monetization of such works must ensure Commercial Use of any portion derived from the Software complies with this License.
 
-## 3. ATTRIBUTION REQUIREMENTS
+### 3. ATTRIBUTION REQUIREMENTS
 
 You must:
 
@@ -95,7 +95,7 @@ d. This License does not grant permission to use the trade names, trademarks, se
 
 e. The Licensor reserves all rights to names, logos, and branding associated with the Software.
 
-## 4. COMMERCIAL USE RESTRICTIONS
+### 4. COMMERCIAL USE RESTRICTIONS
 
 a. Any Commercial Use of the Software requires explicit written permission from the Licensor.
 
@@ -114,7 +114,7 @@ d. Absent explicit permission, any Commercial Use of the Software or Derivative 
 
 e. Commercial entities interested in using the Software are encouraged to contact the Licensor regarding dual-licensing options that may provide more flexible terms for commercial applications.
 
-## 5. CONTRIBUTIONS
+### 5. CONTRIBUTIONS
 
 a. Any Contributor who submits a Contribution to the Software:
    i. Grants the Licensor a non-exclusive, worldwide, royalty-free license to use, reproduce, modify, display, distribute, and run their Contribution;
@@ -125,7 +125,7 @@ b. Contributions shall be governed by this License unless explicitly agreed othe
 
 c. Direct contributions to the main project repository (such as pull requests, bug fixes, or minor enhancements) are not considered Derivative Works eligible for monetization under Section 2(c). A Derivative Work eligible for monetization must be independently distributed and meet the "Significant" threshold defined in Section 1(c).
 
-## 6. PATENT RIGHTS
+### 6. PATENT RIGHTS
 
 a. The Licensor explicitly reserves the right to seek and obtain patents on any aspect of the Software.
 
@@ -138,7 +138,7 @@ c. You may seek and obtain patents on Your original innovations in any Derivativ
 
 d. If You institute patent litigation against any entity regarding the Software or a Derivative Work, your rights under this License will automatically terminate.
 
-## 7. TERMINATION
+### 7. TERMINATION
 
 a. Your rights under this License will terminate automatically if You fail to comply with any of its terms.
 
@@ -148,27 +148,27 @@ b. If Your rights have terminated, You may reinstate them by:
 
 c. Termination of Your rights does not terminate the license of parties who have received the Software or Derivative Works from You as long as they remain in compliance.
 
-## 8. DISPUTE RESOLUTION
+### 8. DISPUTE RESOLUTION
 
 Any disputes arising under this License may be resolved through binding arbitration under mutually agreed rules and provider, if both parties consent. Otherwise, the dispute shall be resolved in the appropriate courts under Section 11.
 
-## 9. DISCLAIMER OF WARRANTY
+### 9. DISCLAIMER OF WARRANTY
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-## 10. LIMITATION OF LIABILITY
+### 10. LIMITATION OF LIABILITY
 
 IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-## 11. GOVERNING LAW
+### 11. GOVERNING LAW
 
 This License shall be governed by and construed in accordance with the laws of the jurisdiction in which the Licensor primarily resides, without regard to its conflict of law provisions.
 
-## 12. VERSION COMPATIBILITY
+### 12. VERSION COMPATIBILITY
 
 This License applies to all versions of the Software unless a new version is explicitly released under different terms. The Licensor may publish revised versions of this License from time to time.
 
-## 13. ENTIRE AGREEMENT
+### 13. ENTIRE AGREEMENT
 
 This License constitutes the entire agreement between the parties with respect to the Software licensed herein and supersedes all prior and contemporaneous agreements, both written and oral, regarding such subject matter.
 
