@@ -1,5 +1,5 @@
 ---
-modified: 2025-05-06
+modified: 2025-05-17
 created: 2025-05-03
 ---
 ## Projects
@@ -11,3 +11,7 @@ created: 2025-05-03
 - [[wordpress blog]]
 ## Classes
 - Senior Design: [[AdvenTour]]
+
+### Idea Cloud
+- [[typewriter that steals your personal data]]
+- [[fast food employee party game]]

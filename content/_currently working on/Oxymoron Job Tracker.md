@@ -1,11 +1,12 @@
 ---
 created: 2025-05-15
-modified: 2025-05-15
+modified: 2025-05-17
 ---
 > Where hope meets data, and neither wins.
 
 Job hunting discord bot: post link to job and it web scrapes the page and saves a copy of it for later and it also keeps track of all the key terms and stuff and makes stats based on if you get rejected or ghosted or move on into an interview or whatever it checks. What key terms are most likely for you to move on to that kind of thing
 
+- contained entirely within a [[docker]] or [[podman]] container
 - link bot to a discord channel
 - accept all messages as input
 - sanitize the messages and parse

@@ -1,5 +1,5 @@
 ---
-modified: 2025-05-06
+modified: 2025-05-17
 created: 2025-05-03
 ---
 ## front end
@@ -23,7 +23,3 @@ created: 2025-05-03
 - openai embeddings 3 large api
 - google perspectives api
 - claude 3 sonnet api
-
----
-
-![[data pipeline]]

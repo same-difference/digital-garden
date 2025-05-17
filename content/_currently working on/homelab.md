@@ -1,10 +1,13 @@
 ---
 created: 2025-05-14
-modified: 2025-05-15
+modified: 2025-05-17
 ---
 I started looking for affordable hosting for my [[wordpress blog]] and started with AWS Lightsail, then Hetzner, and then realized I was getting really into the [[server hardening]] side of things and wanted to host more apps, like my [[rail royale]] game and my [[discord to obsidian bot]]. Cloudflare workers wouldn't work for the discord->obsidian bot and running a serverless go project is a lot more annoying than a serverless javascript project, so self-hosting entered the radar and well.... now I have a bunch of mini pcs on their way to start with :D
 
 I spent like 4 days deep in research land and now all my youtube recommendations are homelab-related :D
+
+> For future reference:
+> [[Console Commands Cheatsheet]]
 
 ## Current Homelab Plan
 - Raspberry Pi 4 - control plane

@@ -1,6 +1,6 @@
 ---
 created: 2025-05-06
-modified: 2025-05-06
+modified: 2025-05-17
 ---
 ## 📚 Phase 1 — Planning & Research
 > Focus: Defining the experience and how I'm going to accomplish it
@@ -22,7 +22,7 @@ modified: 2025-05-06
 ## 🎨 Phase 3 — Design
 > Focus: Creating the look & feel of the site, creating atmosphere
 - [ ] Test out fonts
-- [ ] Make boring view design in figma
+- [ ] Make [[accessibility|boring view design]] in figma
 - [ ] Translate boring view design to current barebones structure
 - [ ] Find royalty free non-ai music, about 3 hours worth due to length of time people are gonna spend on this site. Spacey, ambient, thoughtful
 - [ ] Find beep boop spacey sound effects for interface

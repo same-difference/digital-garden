@@ -1,8 +1,7 @@
 ---
-modified: 2025-05-04
+modified: 2025-05-17
 created: 2025-05-03
 ---
-
 My friend and I used to use Google Sheets as our primary means of communication from about 2014-2019. Did you know Google Sheets has a maximum file size? We didn't. [Until we hit it](https://support.google.com/drive/answer/37603?hl=en#:~:text=Up%20to%2010%20million%20cells%20or%2018%2C278%20columns%20(column%20ZZZ)%20for%20spreadsheets%20that%20are%20created%20in%20or%20converted%20to%20Google%20Sheets.).  When I started hearing about chatbots and vocal clones of popular creators based on all the data they have out there, I got to thinking.... I have that.
 
 I have the spreadsheet, I have the version history, heck I could make TWO chatbots based on who edited what cell. I- Oh wait... A few years back I made a change, reverted to a previous version, and it completely wiped the proper editing history. Dang.

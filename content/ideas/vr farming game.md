@@ -1,5 +1,5 @@
 ---
-modified: 2025-05-04
+modified: 2025-05-17
 created: 2025-05-03
 ---
 For my VR experience, I’m choosing a farming game, mainly because I absolutely love the genre and am super curious on how the experience and gameplay loop could translate to VR. For the purposes of this paper, let’s call it Farm VR.
@@ -17,3 +17,5 @@ As a pretty dang unique entry in the farming game genre, I imagine most in the t
 With the colonists and the clone, especially in a VR game, the goal is get the player attached and heavily invested in their personalities and character arcs, as well as their colony’s community as a whole. Studies have shown that VR can elicit empathy particularly well, so it’s the perfect medium for a game like this.
 
 All-in-all, I’m loving this concept and I’m the one who made it. I imagine the impact it’ll have on farming gamers would be huge, as many farming games are set in the modern day or in fantasy settings, not really sci-fi, and the excuses for why the player is starting a farm are usually flimsy at best. VR gamers would likely enjoy the game as well, with it being a full-body test of mobility and stamina they complete at their own pace. A relaxing experience with calming repetitive tasks, that also happens to have a wild story.
+
+Definitely need to follow some [[Game Dev Tutorials]] before starting this one.

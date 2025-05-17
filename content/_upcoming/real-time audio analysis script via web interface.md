@@ -1,6 +1,6 @@
 ---
 created: 2025-05-15
-modified: 2025-05-15
+modified: 2025-05-17
 ---
 When recording my [[GuitAR]] experience, I saw my [[GuitAR#Original Plan For Audio Script|original plan]] and lamented the fact that I was never actually able to make it. Making the full app myself in XR isn't something I have the time for atm, but the [[audio analysis]] itself? Oooooh baby am I down
 
@@ -31,3 +31,4 @@ So this idea was born. An audio analysis script accessible via a web interface. 
 > Using Essentia, RtAudio, FFTW, and std::thread
 
 Gets mic input in real time, does all the stuff in the [[GuitAR#Original Plan For Audio Script|original plan]] if it was indeed a good plan. Change the plan if needed, and sends json to the front end with: detected note/chord, confidence, frequency spectrum, energy level, and processing latency (both internet induced + script induced)
+Connect the two ends with [[websockets]].
