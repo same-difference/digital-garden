@@ -1,6 +1,6 @@
 ---
 title: Welcome To My Garden 🌱
-modified: 2025-05-15
+modified: 2025-05-17
 created: 2025-05-03
 ---
 [What's a digital garden?](https://maggieappleton.com/garden-history/)
@@ -16,12 +16,18 @@ Progress!! 🥳
 * [[Oxymoron Job Tracker]] - how unemployed are you? yes. the answer is yes. hire me _please_ 😭🙏
 * [[_headsinthe.cloud]] - OMG YES SUPER COOL PHILOSOPHY PROJECT I'M SO EXCITED HERE'S THE LANDING PAGE: https://headsinthe.cloud/
 * [[PortfoliOS]] - a major revamp to my current portfolio to make it more fun, playful, and have sensible coding patterns
-* [[wordpress blog]] - because I must finish what 9-year-old me started 😤✊
 * [[homelab]] - I _maaaaay_ have gotten sidetracked on my way to starting that wordpress blog
+## Upcoming
+- [[discord to obsidian bot]] - a bot that takes posts from discord and automagically copies them over to your obsidian vault for future notetaking
+- [[rail royale]] - mini metros meets transport fever inside the browser. also it's multiplayer
+- [[real-time audio analysis script via web interface]] - what it says on the tin
+* [[wordpress blog]] - because I must finish what 9-year-old me started 😤✊
 ## Backburner
 - [[Sheetchat]] - a chatbot using my and a friend's personal chats from 2014-2019
 - [[mechatbot]] - a chatbot using my own discord data lol
 - [[Storyboarder]] - a visual card-based notetaking tool geared towards writing stories and a fast _fast_ (yes double fast) intuitive experience so you can go brrrr at the rate your thoughts come and fingers translate into keyboard
+## Accidental Side Quests
+- [[_What is OOSL|Oxymoron Open Source License]] - a software license that aims to balance open collaboration with creator protections against nonconsensual monetization
 ## Want to explore?
 Try viewing any of the sections below! Clicking "Link to original" will reveal the links in that section
 
@@ -31,5 +37,6 @@ Try viewing any of the sections below! Clicking "Link to original" will reveal t
 
 ![[notes/index|index]]
 ## Archives
+- [[Summer 2025]]
 - [[Spring 2025]]
 - [[Fall 2024]]

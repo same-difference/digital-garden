@@ -1,5 +1,5 @@
 ---
-modified: 2025-05-14
+modified: 2025-05-17
 created: 2025-05-03
 ---
 ## Intro
@@ -9,9 +9,11 @@ My portfolio has long needed a makeover and I was stuck on where to go from what
 - https://youtu.be/Yko-LMBrRQw?si=uYGntc-ILmXopWJ2
 - https://www.youtube.com/watch?v=_tWh4cYCTv0
 ( can you tell I was on a youtube binge? )
-## Mockup
+## Hand-drawn Mockup
 ![[Pasted image 20250503184709.png]]
 ![[Pasted image 20250503184720.png]]
+## WIP Figma
+![[Pasted image 20250517045633.png]]
 ## Starting Point
 See, my portfolio site was my very first individual project working with a modern tech stack. My only experience with the stack prior had been a hackathon project called [[HookedIn]], so this was my first opportunity to properly sit down and learn these tools.
 
@@ -41,3 +43,10 @@ Goal: Polish the turd both above the hood and underneath it
 - [ ] extract and reorganize current components
 - [ ] make standardized components for headers, blocks of text, urls, cards, pills, and other common ui elements
 Next step: Migrate from raw react & vite to astro
+
+## Migrating to Astro (Jumping the gun a little but shhh)
+Goal: Create the basic navigation and make sure the old stuff still works
+- [x] Init an astro project (I need to start somewhere okay)
+- [ ] Make the new site navigation
+- [ ] Import the old components
+- [ ] Ensure the old components still work
