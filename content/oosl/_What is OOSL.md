@@ -1,7 +1,7 @@
 ---
 created: 2025-05-17
 modified: 2025-05-17
-title: What is OOSL?
+title: _What is OOSL?
 ---
 I was looking at licenses for my upcoming [[Oxymoron Job Tracker]] bot and couldn't find anything that resonated. I love open source in theory. The collaboration, the iteration, the constant forks and push requests and a community coming together to build a product they believe in.
 
