@@ -1,5 +1,5 @@
 ---
-modified: 2025-05-04
+modified: 2025-05-20
 created: 2025-05-03
 ---
 A part of my Senior Design project: [[AdvenTour]]
@@ -10,4 +10,4 @@ insert some videos of it working future-me, ty
 [[esp-32]]
 [[arduino]]
 
-#todo
+#stub

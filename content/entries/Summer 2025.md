@@ -1,6 +1,6 @@
 ---
 created: 2025-05-15
-modified: 2025-05-17
+modified: 2025-05-20
 ---
 Job Hunting Season Begins 🫡
 
@@ -24,3 +24,4 @@ Job Hunting Season Begins 🫡
 - [[smart alarm]]
 - [[pretend stock market]]
 - [[sorting algorithm visualizer]]
+- [[degooglification]]

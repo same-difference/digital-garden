@@ -1,5 +1,5 @@
 ---
-modified: 2025-05-17
+modified: 2025-05-20
 created: 2025-05-03
 ---
 My friend and I used to use Google Sheets as our primary means of communication from about 2014-2019. Did you know Google Sheets has a maximum file size? We didn't. [Until we hit it](https://support.google.com/drive/answer/37603?hl=en#:~:text=Up%20to%2010%20million%20cells%20or%2018%2C278%20columns%20(column%20ZZZ)%20for%20spreadsheets%20that%20are%20created%20in%20or%20converted%20to%20Google%20Sheets.).  When I started hearing about chatbots and vocal clones of popular creators based on all the data they have out there, I got to thinking.... I have that.
@@ -8,7 +8,7 @@ I have the spreadsheet, I have the version history, heck I could make TWO chatbo
 
 ...But then I found out Google Drive has an API. It can compare and contrast every single previous version and you can construct the most detailed version history you ever did see.
 
-I never got further than making a script for it and thinking about running it, since I was taking Computer Science 2 at the time and needed to [[Current Goals|focus on that]] instead.
+I never got further than making a script for it and thinking about running it, since I was taking Computer Science 2 at the time and needed to [[CS2 Final Project - SkipList|focus on that]] instead.
 
 I'll get back to it one day, after I have a stable income and can dedicate more time to my sillier projects. These links and whatnot are for my own reference, since I forgot about them until just now
 

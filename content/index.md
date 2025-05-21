@@ -1,6 +1,6 @@
 ---
 title: Welcome To My Garden 🌱
-modified: 2025-05-17
+modified: 2025-05-20
 created: 2025-05-03
 ---
 [What's a digital garden?](https://maggieappleton.com/garden-history/)
@@ -40,3 +40,5 @@ Try viewing any of the sections below! Clicking "Link to original" will reveal t
 - [[Summer 2025]]
 - [[Spring 2025]]
 - [[Fall 2024]]
+- [[Spring 2024]]
+- [[Fall 2023]]
